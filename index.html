@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Image Gallery | The HTML World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">3D<span>World</span></h1>
+        <nav class="nav">
+            <a href="#gallery" class="active">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Immersive <span class="highlight">3D Gallery</span></h2>
+                <p>Experience images in a whole new dimension. Hover, click, and explore!</p>
+                <button class="cta-btn" id="exploreBtn">Start Exploring <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="hero-3d">
+                <div class="floating-cube" id="floatingCube">
+                    <div class="face front">3D</div>
+                    <div class="face back">CSS</div>
+                    <div class="face left">HTML</div>
+                    <div class="face right">JS</div>
+                    <div class="face top">WEB</div>
+                    <div class="face bottom">FUN</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">3D Image <span>Gallery</span></h2>
+            <p class="section-subtitle">Hover over images to see 3D effect • Click to enlarge</p>
+            
+            <div class="gallery-controls">
+                <button class="control-btn active" data-filter="all">All</button>
+                <button class="control-btn" data-filter="nature">Nature</button>
+                <button class="control-btn" data-filter="space">Space</button>
+                <button class="control-btn" data-filter="abstract">Abstract</button>
+                <button class="control-btn" data-filter="tech">Tech</button>
+            </div>
+
+            <div class="gallery-container">
+                <!-- 3D Image Cards -->
+                <div class="card-3d" data-category="nature">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mountain Landscape">
+                            <div class="card-overlay">
+                                <h3>Mountain Peak</h3>
+                                <p>Nature • 3D Depth</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Mountain Details</h3>
+                            <p>Experience the depth of mountain ranges with parallax effect.</p>
+                            <div class="card-stats">
+                                <span><i class="fas fa-mountain"></i> Altitude: 4,500m</span>
+                                <span><i class="fas fa-eye"></i> 3D View</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-3d" data-category="space">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Galaxy">
+                            <div class="card-overlay">
+                                <h3>Deep Space</h3>
+                                <p>Galaxy • Infinite</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Nebula Cloud</h3>
+                            <p>Floating through interstellar clouds with 3D perspective.</p>
+                            <div class="card-stats">
+                                <span><i class="fas fa-star"></i> Stars: ∞</span>
+                                <span><i class="fas fa-rocket"></i> 3D Flight</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-3d" data-category="abstract">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Abstract Art">
+                            <div class="card-overlay">
+                                <h3>Abstract Flow</h3>
+                                <p>Colors • Movement</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Color Dimension</h3>
+                            <p>Layers of colors creating depth perception illusion.</p>
+                            <div class="card-stats">
+                                <span><i class="fas fa-palette"></i> Colors: 24</span>
+                                <span><i class="fas fa-layer-group"></i> Layers: 7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-3d" data-category="tech">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Futuristic City">
+                            <div class="card-overlay">
+                                <h3>Neon City</h3>
+                                <p>Future • Tech</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Cyber Dimension</h3>
+                            <p>Holographic cityscape with depth mapping.</p>
+                            <div class="card-stats">
+                                <span><i class="fas fa-city"></i> Buildings: 156</span>
+                                <span><i class="fas fa-lightbulb"></i> Lights: 2.4k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-3d" data-category="nature">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Forest Path">
+                            <div class="card-overlay">
+                                <h3>Deep Forest</h3>
+                                <p>Nature • Path</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Forest Tunnel</h3>
+                            <p>Vanishing point perspective with 3D trees.</p>
+                            <div class="card-stats">
+                                <span><i class="fas fa-tree"></i> Trees: 320</span>
+                                <span><i class="fas fa-road"></i> Depth: 120m</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-3d" data-category="space">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Solar Eclipse">
+                            <div class="card-overlay">
+                                <h3>Solar Eclipse</h3>
+                                <p>Space • Celestial</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Orbital View</h3>
+                            <p>Three-dimensional view of celestial bodies alignment.</p>
+                            <div class="card-stats">
+                                <span><i class="fas fa-sun"></i> Diameter: 1.4M km</span>
+                                <span><i class="fas fa-moon"></i> Distance: 384k km</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-content">
+                <h2>About This <span>3D Gallery</span></h2>
+                <p>This interactive gallery showcases the power of CSS 3D transforms, creating immersive visual experiences without any external libraries.</p>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>CSS 3D Transforms</h3>
+                        <p>Using transform-style: preserve-3d for realistic depth</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-mouse-pointer"></i>
+                        </div>
+                        <h3>Interactive Elements</h3>
+                        <p>Hover effects, clicks, and smooth animations</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Works perfectly on all devices and screen sizes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-3d">
+                <div class="pyramid">
+                    <div class="base"></div>
+                    <div class="side side1"></div>
+                    <div class="side side2"></div>
+                    <div class="side side3"></div>
+                    <div class="side side4"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Experience <span>More 3D</span></h2>
+            <p>Want to see more 3D designs or collaborate on a project?</p>
+            <form class="contact-form">
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message..." rows="4"></textarea>
+                <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>The HTML World - 3D Gallery Experience &copy; <span id="currentYear"></span></p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-codepen"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- Modal for enlarged image -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modalImage" src="" alt="Enlarged 3D View">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
