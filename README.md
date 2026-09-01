@@ -4,7 +4,7 @@ An immersive 3D gallery built with pure HTML, CSS, and JavaScript featuring inte
 
 ![3D Gallery Preview](https://img.shields.io/badge/3D-Gallery-6c63ff) ![Responsive](https://img.shields.io/badge/Responsive-Yes-green) ![License](https://img.shields.io/badge/License-MIT-blue)
 
-## ✨ Live Demo
+## ✨ Live Demo press the link below to see it :)
 [https://mandar999xxx.github.io/The-html-world-/](#) 
 
 ## 📸 Preview
